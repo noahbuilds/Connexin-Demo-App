@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
   const gotoLoginPage = () => {
-    router.push("/pages/login");
+    router.push("/login");
   };
   return (
     <main>

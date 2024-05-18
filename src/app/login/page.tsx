@@ -32,7 +32,7 @@ const LoginForm: React.FC<LoginFormProps> = () => {
       } else {
         localStorage.setItem("token", data.token);
         setLoginProcess(false);
-        router.push("pages/profile");
+        router.push("/profile");
       }
     } catch (error) {
       setLoginProcess(false);

@@ -12,7 +12,7 @@ const ProfilePage = () => {
 
   const doLoggout = () => {
     localStorage.removeItem("token");
-    router.push("/pages/login");
+    router.push("/login");
   };
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const ProfilePage = () => {
         const token = localStorage.getItem("token");
 
         if (!token) {
-          router.push("/pages/login");
+          router.push("/login");
           return;
         }
 
